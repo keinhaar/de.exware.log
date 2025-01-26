@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    id="de.exware.log"
+    name="Simple Logging API Plugin"
+    version="${VERSION}"
+    provider-name="Martin Schmitz"
+    >
+    <classpath>
+    	<pathelement value="."></pathelement>
+    	<pathelement value="de.exware.log.jar"></pathelement>
+    </classpath>
+</plugin>

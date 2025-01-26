@@ -1,0 +1,15 @@
+<loggers>
+	<log name="" level="DEBUG">
+		<listener class="de.exware.log.ConsoleLogListener"/>
+		<listener class="de.exware.log.rcp.RollingFileLogListener">
+			<param name="maxSize" value="10000000"/>
+			<param name="maxFiles" value="5"/>			
+			<param name="filename" value="log.txt"/>
+			<param name="basedir" value="."/>	
+			<param name="format" value="%d %l [%n] %m %o"/>	
+		</listener>
+        <filter class="de.exware.log.rcp.RegExFilter">
+            <param name="regex" value=".*SELECT \* FROM property.*"/>
+        </filter>
+	</log>
+</loggers>
